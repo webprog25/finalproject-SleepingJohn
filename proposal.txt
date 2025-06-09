@@ -1,26 +1,43 @@
 Webprog Final Project Proposal
 =============================
-<TODO: Fill in this proposal template and remove the TODOs (including the < >).>
 
-Project Title: <TODO: Come up with a name, or a short description will do>
-Your Name: <TODO>
+Project Title: Mini Game with Leaderboard
+Your Name: Johannes Spilka
 
 Description
 -----------
-<TODO: Tell us about your project idea. What will it do, how will it work. A paragraph or two should do. It may be helpful to include a "feature list" that details what users will be able to do in the app.>
-
+I want to do a Webapp Minigame with a Leaderboard. 
+A Player will be able to choose a Name before playing and his Name will be in the Leaderboard if he reaches a minimum Score(so far the plan). 
+So it will be a minigame with guestplayer access.
 Milestone(s)
 ------------
-<TODO: Talk a bit about the process you want to take, and what you'd like to have done by the check-in milestone. I won't hold you to that milestone; we just want you to be thinking about the order you'll be working on things. If there are any current or anticipated blockers (e.g. needing to get data from an external source or getting feedback on something), please identify those here too.>
+I want to have a working leaderboard which get displayed when a user clicks on Play (0 points for now) by the first checkpoint.
+Ideally I want a minimal fuctional game working by the firts checkpoint. At least locally.
+And then i want to improve the overall gameplay and Design of the Game.
+If possible i would try to add also a User registration on top of the Guestplayer functionallity, so Players can create a unique Username to represent themself in the Leaderboard.
 
 External libraries and code
----------------------------
-<TODO: Identify any external libraries or code you plan to use, and describe how it fits into your project. It's fine to say "None" here, and you can change your mind later.>
+I plan to use the following external tools and libraries:
+
+-Firebase (Realtime Database or Firestore) – to store and retrieve guest scores for the leaderboard.
+
+-JavaScript – for game logic, DOM manipulation, and API communication.
+
+-HTML/CSS – for structuring and styling the user interface.
+
+-No additional libraries or game engines are planned at this stage, but this may change as the project develops( i have some experience with Unity3D but i will very likely not take it this far, also because i want to stay inside the Classes topics).
+
 
 Collaboration and resources
 ---------------------------
-<TODO: Identify any sources you plan to consult, except for code listed above. This might include getting feedback from users or getting data from an external source.>
+I will consult the following resources:
+
+-Firebase documentation for setting up the database and integrating it with JavaScript.
+-MDN Web Docs for JavaScript, HTML, and CSS reference.
+-I may ask classmates or test users for feedback only on usability and gameplay during development.
+(- maybe Google for Login Services: OAuth login)
+
 
 Anything else?
 -------------
-<TODO: Anything else you'd like me to know?>
+There is yet not real explanation on the game itself since i may change it up.
