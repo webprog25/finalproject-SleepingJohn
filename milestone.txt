@@ -1,29 +1,58 @@
 Final Project Milestone
 ==============================
 
-Project Title: <TODO>
-Your Name: <TODO>
+Project Title: Snake Game(name maybe changing)
+Your Name: Johannes Spilka
 
 Overview
 --------
-<TODO: Let me know how things are going. What have you explored, looked into, worked on, and tried so far? What do you have left to do? Are you running into any particular difficulties or blockers?>
+So far, I’ve implemented the core game structure as written in the proposal for a Snake Game using JavaScript, HTML, and CSS. The player can input their name and start the game. 
+The game displays the snake(which is just a dot for now) on a canvas and allows for basic rendering. Buttons for the leaderboard and game start screen are functional.
+I still need to implement the "snake" movement, collision, and score tracking. The leaderboard currently shows a placeholder and doesn’t store or display actual scores yet.
+I tried to make  green overlay in the theme of a poisenous green snake.
 
 Project Changes
 ---------------
-<TODO: If you are planning to change something about your project (scope, features, etc.) from your proposal, please let me know what changes you're planning to make.>
+Originally I considered using a database or server for the leaderboard, but I’ll now keep it local with localStorage for simplicity .(not yet)
 
 Implementation Details
 ----------------------
-<TODO: Describe how you will implement (or have implemented) a specific feature or part of the project. Include specific details about the frontend (e.g. what classes you'll have and how the user interface will work) and backend (e.g. what API endpoints you'll use and how you'll store the data). As with the proposal, this can change later; I just want to make sure you've thought through some of these details.>
+Frontend:
+-The game uses HTML elements divided into three screens: startScreen, gameScreen, and leaderboard.
+
+-Uers enter their name in an <input> field. On clicking "Play", their name is stored and displayed.
+
+-A <canvas> element is used to draw the game field and snake dot.
+
+-The snake is drawn using the CanvasRenderingContext2D API and will be moved using keyboard event listeners and a game loop (via setInterval).
+
+-I will add buttons to restart the game after game over or stat automatically.
+
+-Backend (local only):
+No external server or API for now. Score data will be saved using window.localStorage. (later maybe mongodb)
+
+-Data will be saved as a JSON array of score entries and shown in a list inside the leaderboardList .
+
 
 External libraries and code
 ---------------------------
-<TODO: Identify any external libraries or code you are using or plan to use, and describe how it fits into your project. Please include everything even if you already listed it in your proposal.>
+-No external libraries currently used.
+
+
+Code is written entirely in JS, HTML5, and CSS3.
 
 Collaboration and resources
 ---------------------------
-<TODO: Identify any sources you have consulted or plan to consult, except for code listed above. Include those you listed previously in your proposal.>
+MDN Web Docs (Canvas API, localStorage)
+
+W3Schools and Stack Overflow for HTML/CSS layout tips and canvas drawing examples.
+
+ChatGpt for some tips on CSS styling
+
 
 Anything else?
 --------------
-<TODO: Anything else you'd like me to know?>
+The next milestone will be adding actual gameplay logic and making the leaderboard functional.
+
+I will more likly turn into a "run throug obstacles" game cause the idea i had in mind originally might ot work as i had it in mind.
+But now the plan is to have the "snake" dot run through generating obstacles with increasing speed.
