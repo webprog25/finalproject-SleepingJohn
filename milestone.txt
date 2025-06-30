@@ -13,7 +13,12 @@ I tried to make  green overlay in the theme of a poisenous green snake.
 
 Project Changes
 ---------------
-Originally I considered using a database or server for the leaderboard, but I’ll now keep it local with localStorage for simplicity .(not yet)
+Originally I considered using a database or server for the leaderboard, but I’ll now keep it local with localStorage for simplicity.
+
+I added game mechanics but now yet pushed. so the snake is more like a dot and the player needs to run through obstacles which are getting generated.
+Until Lvl 15 ths snake is getting just quicker and reaches topspeed at Lvl 15. From there on the Obstacles are getting very close together and the player need
+to navigate through it.
+Sign in with Google is also implement.
 
 Implementation Details
 ----------------------
