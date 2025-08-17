@@ -1,33 +1,60 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Snake Game</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Identity Services (muss vor vertical_snake_game.js geladen sein) -->
+  <script src="https://accounts.google.com/gsi/client" defer></script>
 </head>
 <body>
+
   <div id="startScreen">
     <h1>Snake Game</h1>
-    <label for="playerName">Name:</label>
-    <input type="text" id="playerName" placeholder="Your Name" />
-    <br><br>
-    <button id="playButton">Play</button>
+
+    <!-- Google-Login + Button -->
+    <p id="authStatus" aria-live="polite">Not signed in</p>
+    <div class="g_id_signin" data-type="standard"></div>
+
+    <input id="playerName" placeholder="Your Name" />
+    <br /><br />
+    <button id="playButton" disabled>Play</button>
     <button id="leaderboardButton">Leaderboard</button>
   </div>
 
-  <div id="gameScreen">
-    <p id="playerNameDisplay"></p>
-    <canvas id="gameCanvas" width="400" height="300"></canvas>
+  <p id="playerNameDisplay"></p>
+
+  <!-- ▸ Game-Screen ----------------------------------------------- -->
+  <div id="gameScreen" style="display:none;">
+    <canvas id="gameCanvas" width="600" height="650"></canvas>
+    <div id="levelDisplay">Level: 1</div>
+    <div id="scoreDisplay">Score: 0</div>
   </div>
 
-  <!-- Leaderboard -->
-  <div id="leaderboard">
+  <!-- ▸ Leaderboard --------------------------------------------------- -->
+  <div id="leaderboard" style="display:none;">
+    <button id="closeLeaderboard">×</button>
     <h2>Leaderboard</h2>
-    <ul id="leaderboardList"></ul>
-    <button id="closeLeaderboard">x</button>
+    <ol id="leaderboardList"></ol>
   </div>
+  <button id="controlsButton">Controls</button>
 
-  <!-- Code -->
+<!-- Controls Popup -->
+<div id="controlsModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <button id="closeControls" class="close-btn" aria-label="Close Controls">×</button>
+    <h2>Controls</h2>
+    <ul>
+      <li><strong>Move Left:</strong> Arrow Left or A</li>
+      <li><strong>Move Right:</strong> Arrow Right or D</li>
+      <li><strong>Tip:</strong> Holding the key moves faster</li>
+    </ul>
+  </div>
+</div>
+
   <script src="vertical_snake_game.js"></script>
 </body>
 </html>

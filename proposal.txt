@@ -32,7 +32,6 @@ Collaboration and resources
 ---------------------------
 I will consult the following resources:
 
--Firebase documentation for setting up the database and integrating it with JavaScript.
 -MDN Web Docs for JavaScript, HTML, and CSS reference.
 -I may ask classmates or test users for feedback only on usability and gameplay during development.
 (- maybe Google for Login Services: OAuth login)
